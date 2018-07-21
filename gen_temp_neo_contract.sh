@@ -1,10 +1,11 @@
 
 neo_workspace_path = "/home/ubuntu/neo_workspace";
+cd $neo_workspace_path
 echo "Start create NEO Contract Project $1"
-cd "${neo_workspace_path}"
 temp_project_folder = "neo_temp_project_$1"
-mkdir "${temp_project_folder}"
-cd "${temp_project_folder}"
+final_folder_path=${neo_workspace_path}${temp_project_folder}
+mkdir -p $final_folder_path
+cd $final_folder_path
 dotnet new classlib
 rm ./Class1.cs
 
