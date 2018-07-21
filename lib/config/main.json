@@ -8,6 +8,12 @@
 			"options":{
 				
 			}
-		}
+		},
+		"websocket":{
+			"wsport":21111
+		},
+		"temp_contract_file_path":"/home/ubuntu/neo_workspace/temp_upload_script"
 	}
+	
 }
+

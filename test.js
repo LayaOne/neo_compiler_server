@@ -1,2 +1,4 @@
-var np = require('./lib/middleware/neo_complier');
-np.complier_contract_avm('1004');
+var wsServer = require('./lib/middleware/ws_server');
+
+var server = new wsServer();
+server.start();
