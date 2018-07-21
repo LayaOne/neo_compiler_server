@@ -29,7 +29,7 @@ echo "public "${temp_project_folder}".dll"
 # 生成avm
 cd /home/ubuntu/neo_workspace/testlib
 dotnet neon.dll ${temp_project_folder}".dll"
-cp ${temp_project_folder}".dll" ../avm_output/
+cp ${temp_project_folder}".avm" ../avm_output/
 
 #清理环境
 echo "Clean Temp Info"
