@@ -1,10 +1,10 @@
 {
-	"name": "服务器名称",
-	"port": 9988,
+	"name": "NEO Complier",
+	"port": 21110,
 	"charset": "utf-8",
 	"components": {
 		"mongoose":{
-			"uri":"mongodb://localhost/lemon",
+			"uri":"mongodb://localhost/neo",
 			"options":{
 				
 			}
