@@ -36,4 +36,5 @@ echo "Clean Temp Info"
 rm ${temp_project_folder}.*
 rm -rf $final_folder_path
 
+
 echo "avm gen success in "${out_put_path}${temp_project_folder}".avm"
