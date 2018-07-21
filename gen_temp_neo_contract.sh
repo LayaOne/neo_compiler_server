@@ -1,4 +1,10 @@
 
+if [ $# -lt 2 ]; then
+echo "命令执行缺少参数"
+echo "e.g: [project_name][contract_file_path]"
+exit 1; 
+fi
+
 neo_workspace_path="/home/ubuntu/neo_workspace"
 out_put_path="/home/ubuntu/neo_workspace/avm_output/"
 cd $neo_workspace_path
@@ -31,6 +37,3 @@ rm ${temp_project_folder}.*
 rm -rf $final_folder_path
 
 echo "avm gen success in "${out_put_path}${temp_project_folder}".avm"
-
-
-
