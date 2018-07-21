@@ -34,10 +34,6 @@ Worker.init = function(finish_callback){
         }
 
     })
-
-
-
- 
 }
 
 Worker.complier_contract = function(path){
