@@ -3,7 +3,7 @@ var Worker = require('./client/worker');
 Worker.init(function(){
 
     //注册log回调
-    Worker.regist_websocket_callback('log_print',console.log);
+    //Worker.regist_websocket_callback('log_print',console.log);
 
     //注册编译成功回调
     Worker.regist_websocket_callback('complie_done',onComplieSuceess);
@@ -13,6 +13,7 @@ Worker.init(function(){
 
 
 })
+
 
 
 
