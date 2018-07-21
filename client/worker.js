@@ -3,7 +3,7 @@ var ws = require('ws');
 var fs = require('fs');
 var wsRouter = require('../lib/middleware/ws_router');
 
-var WSURL = 'ws://127.0.0.1:21111/'
+var WSURL = 'ws://neo.loocall.com/ws'
 Worker.ws_client = undefined;
 
 
