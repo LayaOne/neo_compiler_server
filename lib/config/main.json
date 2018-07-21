@@ -1,0 +1,13 @@
+{
+	"name": "服务器名称",
+	"port": 9988,
+	"charset": "utf-8",
+	"components": {
+		"mongoose":{
+			"uri":"mongodb://localhost/lemon",
+			"options":{
+				
+			}
+		}
+	}
+}
