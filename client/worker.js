@@ -63,22 +63,7 @@ Worker.init = function(finish_callback){
             
             //默认Handler
             if(bhandle == false){
-                switch(packet.cmd){
-
-                    //打印编译Log
-                    case 'log_print' : {
-                        console.log(packet.data);
-                    }
-                    break;
-    
-                    //编译完成
-                    case 'complie_done' : {
-                        console.log('编译完成');
-                    }
-                    break;
-    
-    
-                }
+               console.log('msg not handle',packet);
             }
             
         }catch(e){
@@ -96,7 +81,7 @@ Worker.init = function(finish_callback){
 */
 Worker.download_avmFile = function(url , filename,callback){
     var stream = fs.createWriteStream(filename);
-    request(uri).pipe(stream).on('close', callback); 
+    request(url).pipe(stream).on('close', callback); 
 }
 
 
