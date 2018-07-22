@@ -76,7 +76,7 @@ Worker.init = function(finish_callback){
 /** 
     * 下载avm
     * @param {string} url 下载地址
-    * @param {string} filename 文件名
+    * @param {string} filename 下载本地路径
     * @param {function} callback 完成回调
 */
 Worker.download_avmFile = function(url , filename,callback){
